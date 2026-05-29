@@ -1,0 +1,116 @@
+{
+  "projects": [
+    {
+      "name": "Test",
+      "clientName": "Test",
+      "clientEmail": "ramyarajagopal1412@gmail.com",
+      "id": "U-GLsXd64pU",
+      "createdAt": "2026-05-29T07:45:53.422Z",
+      "invitedEmails": [
+        "test@gmail.com"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "projectId": "U-GLsXd64pU",
+      "title": "Test",
+      "type": "video",
+      "url": "https://www.youtube.com/embed/8aC7cBoHxDE",
+      "id": "9geo2stBZxg",
+      "status": "approved",
+      "createdAt": "2026-05-29T07:47:16.052Z"
+    },
+    {
+      "projectId": "U-GLsXd64pU",
+      "title": "Test",
+      "type": "image",
+      "fileData": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780056684994-737167530-Screenshot_2025-08-20_065231.png",
+      "id": "80gM-90lneQ",
+      "status": "pending",
+      "createdAt": "2026-05-29T11:03:11.597Z",
+      "currentVersion": 2,
+      "versions": [
+        {
+          "version": 1,
+          "fileData": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780052588879-620828782-Screenshot_2025-08-20_063711.png",
+          "createdAt": "2026-05-29T11:03:11.597Z"
+        },
+        {
+          "version": 2,
+          "fileData": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780056684994-737167530-Screenshot_2025-08-20_065231.png",
+          "createdAt": "2026-05-29T12:11:27.953Z",
+          "note": "Uploaded Screenshot 2025-08-20 065231.png"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "reviewId": "9geo2stBZxg",
+      "text": "Add Tittle",
+      "type": "general",
+      "resolved": false,
+      "author": "agency",
+      "id": "o273tqcGPlc",
+      "createdAt": "2026-05-29T07:47:51.624Z"
+    },
+    {
+      "reviewId": "9geo2stBZxg",
+      "text": "Change Image Background",
+      "type": "annotation",
+      "timestamp": 61,
+      "timestampLabel": "1:01",
+      "resolved": false,
+      "author": "agency",
+      "id": "P8tFyTl_Qpg",
+      "createdAt": "2026-05-29T07:48:33.958Z"
+    },
+    {
+      "reviewId": "80gM-90lneQ",
+      "text": "Change Icon Please @ramyarajagopal1412@gmail.com ",
+      "type": "annotation",
+      "xPercent": 76.41882881273104,
+      "yPercent": 35.91961647245069,
+      "resolved": true,
+      "author": "agency",
+      "pinNumber": 1,
+      "versionNumber": 1,
+      "id": "zUxmkIockBU",
+      "createdAt": "2026-05-29T11:04:19.497Z"
+    },
+    {
+      "reviewId": "80gM-90lneQ",
+      "text": "<p>Whats the need for this @test@gmail.com</p>",
+      "type": "annotation",
+      "annotationKind": "rectangle",
+      "xPercent": 21.760286161218726,
+      "yPercent": 9.284731189791934,
+      "widthPercent": 44.86125670454312,
+      "heightPercent": 28.541951435286315,
+      "resolved": false,
+      "author": "agency",
+      "pinNumber": 2,
+      "versionNumber": 2,
+      "id": "8YSTmMR44tg",
+      "createdAt": "2026-05-29T12:22:18.086Z"
+    },
+    {
+      "reviewId": "80gM-90lneQ",
+      "text": "<p>Fix this logo</p>",
+      "type": "annotation",
+      "annotationKind": "arrow",
+      "xPercent": 67.52392446614058,
+      "yPercent": 55.36450820579635,
+      "endXPercent": 55.79296366121695,
+      "endYPercent": 67.40027085923033,
+      "resolved": false,
+      "author": "agency",
+      "pinNumber": 3,
+      "versionNumber": 2,
+      "id": "TzcqvxPUF88",
+      "createdAt": "2026-05-29T12:22:55.238Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
