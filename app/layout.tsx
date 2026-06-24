@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import { shadcn } from "@clerk/ui/themes";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import { cn } from "@/lib/utils";
 
@@ -24,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("font-sans antialiased", inter.variable)}>
       <body className="bg-background min-h-screen">
-        <ClerkProvider appearance={{ theme: shadcn }}>
+        <ClerkProvider>
           <LayoutWrapper>{children}</LayoutWrapper>
         </ClerkProvider>
       </body>
