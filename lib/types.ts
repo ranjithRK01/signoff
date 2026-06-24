@@ -22,6 +22,7 @@ export interface Project {
   description?: string;
   createdAt: string;
   invitedEmails?: string[];
+  clientEmail: string;
 }
 
 export interface ReviewSession {
