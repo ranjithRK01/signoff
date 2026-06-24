@@ -78,7 +78,7 @@ export function SimpleSiteViewer({
   };
 
   const pins = items.filter(
-    (i) => i.annotation && (i.annotation.xPercent != null || i.annotation.x != null)
+    (i) => i.annotation && (i.annotation.xPercent != null || i.annotation.documentX != null)
   );
 
   const iframeSrc = showMock ? "" : getWebsiteIframeSrc(reviewUrl, loadMode);
@@ -189,8 +189,8 @@ export function SimpleSiteViewer({
               </span>
             )}
             {pins.map((item) => {
-              const x = item.annotation!.xPercent ?? item.annotation!.x ?? 0;
-              const y = item.annotation!.yPercent ?? item.annotation!.y ?? 0;
+              const x = item.annotation!.xPercent ?? 0;
+              const y = item.annotation!.yPercent ?? 0;
               const isActive = item.id === activeItemId;
               return (
                 <button
