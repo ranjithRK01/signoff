@@ -19,6 +19,7 @@ import { MvpAnnotatedSiteViewer } from "@/components/mvp/mvp-annotated-site-view
 import { SimpleIssuesPanel } from "@/components/mvp/simple-issues-panel";
 import { PageExplorer } from "@/components/mvp/page-explorer";
 import type { PendingAnnotation } from "@/components/review/image-annotation-canvas";
+import type { IssueType } from "@/lib/types";
 import {
   approveRelease,
   createReviewItem,

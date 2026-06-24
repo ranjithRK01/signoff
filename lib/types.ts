@@ -11,6 +11,13 @@ export type ReviewItemStatus =
 
 export type DeviceMode = "Desktop" | "Laptop" | "Tablet" | "Mobile";
 
+export interface FunctionalDetails {
+  expectedResult: string;
+  actualResult: string;
+  stepsToReproduce: string;
+  environment?: string;
+}
+
 export interface Project {
   _id?: string;
   id: string;
@@ -23,6 +30,7 @@ export interface Project {
   createdAt: string;
   invitedEmails?: string[];
   clientEmail: string;
+  clientName: string;
 }
 
 export interface ReviewSession {
