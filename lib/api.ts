@@ -77,6 +77,33 @@ export async function getReviews(projectId: string): Promise<ReviewSession[]> {
   return res.json();
 }
 
+export async function getOrCreatePage(input: {
+  reviewId: string;
+  pageUrl: string;
+  pageTitle: string;
+}): Promise<{ id: string }> {
+  const res = await fetch(
+    `${BASE_URL}/pages?reviewId=${encodeURIComponent(input.reviewId)}&pageUrl=${encodeURIComponent(input.pageUrl)}`,
+    { cache: "no-store" }
+  );
+  if (res.ok) {
+    const pages = await res.json();
+    if (pages.length > 0) return pages[0];
+  }
+  const createRes = await fetch(`${BASE_URL}/pages`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      id: id(),
+      reviewId: input.reviewId,
+      pageUrl: input.pageUrl,
+      pageTitle: input.pageTitle,
+    }),
+  });
+  if (!createRes.ok) throw new Error("Failed to create page");
+  return createRes.json();
+}
+
 export async function getReview(reviewId: string): Promise<ReviewSession> {
   const res = await fetch(`${BASE_URL}/reviews/${reviewId}`, { cache: "no-store" });
   if (!res.ok) throw new Error(`Failed to fetch review ${reviewId}`);
