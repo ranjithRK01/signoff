@@ -376,7 +376,7 @@ export async function GET(request: NextRequest) {
       parsed.hostname === "staging.client.com"
         ? "This is a demo placeholder URL. Use a real https:// staging URL, or keep the sample project to use the built-in preview."
         : "Check that the URL is reachable from your machine and uses https://.";
-    return new NextResponse(proxyErrorHtml(hint, parsed.toString()), {
+    return new NextResponse(proxyErrorHtml(500, hint, parsed.toString()), {
       status: 200,
       headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" },
     });
