@@ -194,7 +194,7 @@ export function buildAnnotationCaptureFromPending(
   pending: PendingAnnotation,
   frame: FrameScrollState,
   overlaySize: { width: number; height: number },
-  meta: Omit<AnnotationCapture, "startX" | "startY" | "width" | "height" | "documentX" | "documentY" | "scrollPosition" | "viewport" | "xPercent" | "yPercent" | "widthPercent" | "heightPercent"> & { domContext?: AnnotationCapture["domContext"] }
+  meta: Omit<AnnotationCapture, "startX" | "startY" | "width" | "height" | "documentX" | "documentY" | "scrollPosition" | "xPercent" | "yPercent" | "widthPercent" | "heightPercent"> & { domContext?: AnnotationCapture["domContext"] }
 ): AnnotationCapture {
   const sx = frame.scrollX;
   const sy = frame.scrollY;

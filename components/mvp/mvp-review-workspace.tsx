@@ -185,7 +185,6 @@ export function MvpReviewWorkspace({ project, review, projectId }: MvpReviewWork
         {
           pageUrl: framePageUrl || reviewUrl,
           pageTitle: document.title,
-          viewport: overlaySize,
           deviceMode: "Desktop",
           browser: browser?.browser,
           browserVersion: browser?.browserVersion,
