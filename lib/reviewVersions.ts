@@ -1,37 +1,39 @@
-import type { Review, ReviewVersion } from "@/lib/api";
+import type { ReviewSession, Version } from "@/lib/types";
 
-export function normalizeVersions(review: Review): ReviewVersion[] {
-  if (review.versions && review.versions.length > 0) {
-    return [...review.versions].sort((a, b) => a.version - b.version);
-  }
-
-  const v1: ReviewVersion = {
-    version: 1,
-    fileData: review.fileData,
-    url: review.url,
-    createdAt: review.createdAt,
-  };
-  return [v1];
+export function getVersionByNumber(
+  versions: Version[],
+  versionNumber: number
+): Version | undefined {
+  return versions.find((v) => v.versionNumber === versionNumber);
 }
 
-export function getCurrentVersionNumber(review: Review): number {
-  const versions = normalizeVersions(review);
-  if (review.currentVersion && versions.some((v) => v.version === review.currentVersion)) {
-    return review.currentVersion;
-  }
-  return versions[versions.length - 1]?.version ?? 1;
+export function getCurrentVersionNumber(
+  review: ReviewSession,
+  versions: Version[]
+): number {
+  const current = versions.find((v) => v.id === review.currentVersionId);
+  return current?.versionNumber ?? versions[versions.length - 1]?.versionNumber ?? 1;
 }
 
-export function getVersionAsset(review: Review, versionNumber: number): string | undefined {
-  const versions = normalizeVersions(review);
-  const match = versions.find((v) => v.version === versionNumber);
-  if (!match) return review.fileData || review.url;
-  return review.type === "image" ? match.fileData : match.url;
+export function getWebsiteReviewUrl(versions: Version[], versionNumber: number): string {
+  return getVersionByNumber(versions, versionNumber)?.liveUrl ?? "";
 }
 
-export function getPreviousVersionNumber(review: Review, versionNumber: number): number | null {
-  const versions = normalizeVersions(review);
-  const idx = versions.findIndex((v) => v.version === versionNumber);
+export function getWebsiteMockVariant(
+  versions: Version[],
+  versionNumber: number
+): 1 | 2 {
+  const match = getVersionByNumber(versions, versionNumber);
+  if (match?.mockVariant) return match.mockVariant;
+  return versionNumber >= 2 ? 2 : 1;
+}
+
+export function getPreviousVersionNumber(
+  versions: Version[],
+  versionNumber: number
+): number | null {
+  const sorted = [...versions].sort((a, b) => a.versionNumber - b.versionNumber);
+  const idx = sorted.findIndex((v) => v.versionNumber === versionNumber);
   if (idx <= 0) return null;
-  return versions[idx - 1].version;
+  return sorted[idx - 1].versionNumber;
 }

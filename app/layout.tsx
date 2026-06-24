@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
+import { shadcn } from "@clerk/ui/themes";
 import { LayoutWrapper } from "@/components/layout-wrapper";
 import { cn } from "@/lib/utils";
 
@@ -10,8 +12,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "signoff.ai | Creative Reviews & Approvals",
-  description: "Get client approvals and annotations on creative work in seconds.",
+  title: "QuickQA | Live App Review & Signoff",
+  description: "Review → Fix → Validate → Approve → Signoff for live web applications.",
 };
 
 export default function RootLayout({
@@ -22,7 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn("font-sans antialiased", inter.variable)}>
       <body className="bg-background min-h-screen">
-        <LayoutWrapper>{children}</LayoutWrapper>
+        <ClerkProvider appearance={{ theme: shadcn }}>
+          <LayoutWrapper>{children}</LayoutWrapper>
+        </ClerkProvider>
       </body>
     </html>
   );

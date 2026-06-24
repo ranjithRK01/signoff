@@ -1,116 +1,2048 @@
 {
   "projects": [
     {
+      "id": "proj-nh",
+      "name": "NH SSCI",
+      "clientName": "NH Reviewer",
+      "clientEmail": "reviewer@nh.com",
+      "createdAt": "2026-06-04T10:00:00.000Z",
+      "invitedEmails": []
+    },
+    {
+      "name": "TX",
+      "clientName": "Aircaribe",
+      "clientEmail": "test@tx.com",
+      "id": "u2o4ME1C7HA",
+      "createdAt": "2026-06-04T17:35:32.327Z",
+      "invitedEmails": []
+    },
+    {
+      "name": "SB",
+      "clientName": "Aircalin",
+      "clientEmail": "test@sb.com",
+      "id": "e1YvrZwJMpo",
+      "createdAt": "2026-06-04T18:35:13.122Z",
+      "invitedEmails": []
+    },
+    {
+      "name": "MK",
+      "clientName": "Air Marutius",
+      "clientEmail": "test@mk.com",
+      "id": "pDToMokKkYg",
+      "createdAt": "2026-06-04T19:10:56.180Z",
+      "invitedEmails": []
+    },
+    {
       "name": "Test",
-      "clientName": "Test",
-      "clientEmail": "ramyarajagopal1412@gmail.com",
-      "id": "U-GLsXd64pU",
-      "createdAt": "2026-05-29T07:45:53.422Z",
-      "invitedEmails": [
-        "test@gmail.com"
-      ]
+      "clientName": "test",
+      "clientEmail": "test@test.com",
+      "id": "KsxpCSZVizY",
+      "createdAt": "2026-06-04T19:14:29.306Z",
+      "invitedEmails": []
+    },
+    {
+      "name": "Skysecure",
+      "clientName": "test",
+      "clientEmail": "ranjithsumathi22498@gmail.com",
+      "id": "BtLpYYvGi10",
+      "createdAt": "2026-06-06T08:55:54.774Z",
+      "invitedEmails": []
+    }
+  ],
+  "users": [
+    {
+      "id": "user-dev",
+      "name": "Dev Team",
+      "email": "dev@agency.com",
+      "role": "developer"
+    },
+    {
+      "id": "user-reviewer",
+      "name": "NH Reviewer",
+      "email": "reviewer@nh.com",
+      "role": "reviewer"
     }
   ],
   "reviews": [
     {
-      "projectId": "U-GLsXd64pU",
-      "title": "Test",
-      "type": "video",
-      "url": "https://www.youtube.com/embed/8aC7cBoHxDE",
-      "id": "9geo2stBZxg",
-      "status": "approved",
-      "createdAt": "2026-05-29T07:47:16.052Z"
+      "id": "rev-nh-v4",
+      "projectId": "proj-nh",
+      "title": "NH SSCI V4",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "ver-nh-2",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-04T10:00:00.000Z"
     },
     {
-      "projectId": "U-GLsXd64pU",
-      "title": "Test",
-      "type": "image",
-      "fileData": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780056684994-737167530-Screenshot_2025-08-20_065231.png",
-      "id": "80gM-90lneQ",
-      "status": "pending",
-      "createdAt": "2026-05-29T11:03:11.597Z",
-      "currentVersion": 2,
-      "versions": [
-        {
-          "version": 1,
-          "fileData": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780052588879-620828782-Screenshot_2025-08-20_063711.png",
-          "createdAt": "2026-05-29T11:03:11.597Z"
-        },
-        {
-          "version": 2,
-          "fileData": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780056684994-737167530-Screenshot_2025-08-20_065231.png",
-          "createdAt": "2026-05-29T12:11:27.953Z",
-          "note": "Uploaded Screenshot 2025-08-20 065231.png"
-        }
-      ]
+      "id": "ZPgih25HMzg",
+      "projectId": "proj-nh",
+      "title": "NH SSCI V5",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "5rMN6nz7NKg",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-04T17:34:25.280Z"
+    },
+    {
+      "id": "2xh1Y_HDL7s",
+      "projectId": "u2o4ME1C7HA",
+      "title": "TX UAT SSCI",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "P5TWQqrfgPU",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-04T17:36:02.362Z"
+    },
+    {
+      "id": "SeDVpXB8LZ8",
+      "projectId": "proj-nh",
+      "title": "NH SSCI",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "2xjhuv9kf",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-04T18:34:43.241Z"
+    },
+    {
+      "id": "qkvSMGDaD-I",
+      "projectId": "e1YvrZwJMpo",
+      "title": "SB UAT V1",
+      "reviewType": "website",
+      "status": "APPROVED",
+      "currentVersionId": "9HTW_yyeO5Y",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-04T18:35:41.756Z"
+    },
+    {
+      "id": "2AvF3li1RRU",
+      "projectId": "pDToMokKkYg",
+      "title": "MK UAT SSCI",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "ixvaQO1053g",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-04T19:11:38.362Z"
+    },
+    {
+      "id": "nJRzBcZkczY",
+      "projectId": "KsxpCSZVizY",
+      "title": "TEST",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "whz7KlVBocY",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-04T19:14:37.857Z"
+    },
+    {
+      "id": "3C0hOmG5_TA",
+      "projectId": "BtLpYYvGi10",
+      "title": "V1",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "oTTUg99EVlQ",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-06T08:56:04.783Z"
+    },
+    {
+      "id": "PSzs0ta7wr0",
+      "projectId": "BtLpYYvGi10",
+      "title": "V2",
+      "reviewType": "website",
+      "status": "IN_REVIEW",
+      "currentVersionId": "GF6T4tNt3C8",
+      "createdBy": "user-dev",
+      "createdAt": "2026-06-06T09:23:31.473Z"
     }
   ],
-  "comments": [
+  "versions": [
     {
-      "reviewId": "9geo2stBZxg",
-      "text": "Add Tittle",
-      "type": "general",
-      "resolved": false,
-      "author": "agency",
-      "id": "o273tqcGPlc",
-      "createdAt": "2026-05-29T07:47:51.624Z"
-    },
-    {
-      "reviewId": "9geo2stBZxg",
-      "text": "Change Image Background",
-      "type": "annotation",
-      "timestamp": 61,
-      "timestampLabel": "1:01",
-      "resolved": false,
-      "author": "agency",
-      "id": "P8tFyTl_Qpg",
-      "createdAt": "2026-05-29T07:48:33.958Z"
-    },
-    {
-      "reviewId": "80gM-90lneQ",
-      "text": "Change Icon Please @ramyarajagopal1412@gmail.com ",
-      "type": "annotation",
-      "xPercent": 76.41882881273104,
-      "yPercent": 35.91961647245069,
-      "resolved": true,
-      "author": "agency",
-      "pinNumber": 1,
+      "id": "ver-nh-1",
+      "reviewId": "rev-nh-v4",
       "versionNumber": 1,
-      "id": "zUxmkIockBU",
-      "createdAt": "2026-05-29T11:04:19.497Z"
+      "liveUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T10:00:00.000Z",
+      "notes": "Initial UAT build",
+      "mockVariant": 1
     },
     {
-      "reviewId": "80gM-90lneQ",
-      "text": "<p>Whats the need for this @test@gmail.com</p>",
-      "type": "annotation",
-      "annotationKind": "rectangle",
-      "xPercent": 21.760286161218726,
-      "yPercent": 9.284731189791934,
-      "widthPercent": 44.86125670454312,
-      "heightPercent": 28.541951435286315,
-      "resolved": false,
-      "author": "agency",
-      "pinNumber": 2,
+      "id": "ver-nh-2",
+      "reviewId": "rev-nh-v4",
       "versionNumber": 2,
-      "id": "8YSTmMR44tg",
-      "createdAt": "2026-05-29T12:22:18.086Z"
+      "liveUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T14:00:00.000Z",
+      "notes": "Fixes for identification flow",
+      "mockVariant": 2
     },
     {
-      "reviewId": "80gM-90lneQ",
-      "text": "<p>Fix this logo</p>",
-      "type": "annotation",
-      "annotationKind": "arrow",
-      "xPercent": 67.52392446614058,
-      "yPercent": 55.36450820579635,
-      "endXPercent": 55.79296366121695,
-      "endYPercent": 67.40027085923033,
-      "resolved": false,
-      "author": "agency",
-      "pinNumber": 3,
+      "id": "dV_XWV59d_U",
+      "reviewId": "wsduom0fm",
+      "versionNumber": 1,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T17:34:25.280Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "4iazGMO56rM",
+      "reviewId": "zn90hg7zy",
+      "versionNumber": 1,
+      "liveUrl": "http://uat.digital.airline.amadeus.com/tx/ssci",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T17:36:02.362Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "1S3S_MX1PWo",
+      "reviewId": "2xh1Y_HDL7s",
+      "versionNumber": 1,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T17:47:58.229Z",
+      "mockVariant": 1
+    },
+    {
+      "id": "wyp0pQcVlu4",
+      "reviewId": "2xh1Y_HDL7s",
       "versionNumber": 2,
-      "id": "TzcqvxPUF88",
-      "createdAt": "2026-05-29T12:22:55.238Z"
+      "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T17:57:23.593Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "58SWjGczCWw",
+      "reviewId": "2xh1Y_HDL7s",
+      "versionNumber": 3,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T17:58:16.988Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "HkefDu8i2FM",
+      "reviewId": "2xh1Y_HDL7s",
+      "versionNumber": 4,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T18:03:21.477Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "P5TWQqrfgPU",
+      "reviewId": "2xh1Y_HDL7s",
+      "versionNumber": 5,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T18:32:20.954Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "niR11e3Y2Ks",
+      "reviewId": "cq8huaiei",
+      "versionNumber": 1,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T18:34:43.241Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "4IeMGfNBuBM",
+      "reviewId": "eab9mw98l",
+      "versionNumber": 1,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T18:35:41.756Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "yH9EpdJHCXI",
+      "reviewId": "qkvSMGDaD-I",
+      "versionNumber": 1,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T18:36:59.276Z",
+      "mockVariant": 1
+    },
+    {
+      "id": "iJacNbHIk2I",
+      "reviewId": "qkvSMGDaD-I",
+      "versionNumber": 2,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T18:49:46.263Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "9HTW_yyeO5Y",
+      "reviewId": "qkvSMGDaD-I",
+      "versionNumber": 3,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T19:08:24.711Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "Lb8FrtmRZhc",
+      "reviewId": "rghdwge58",
+      "versionNumber": 1,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/mk/ssci/identification",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T19:11:38.362Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "ixvaQO1053g",
+      "reviewId": "2AvF3li1RRU",
+      "versionNumber": 1,
+      "liveUrl": "https://uat.digital.airline.amadeus.com/mk/ssci",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T19:12:05.233Z",
+      "mockVariant": 1
+    },
+    {
+      "id": "UXR-gxgBD60",
+      "reviewId": "75sh8slh1",
+      "versionNumber": 1,
+      "liveUrl": "https://reqsta.com/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T19:14:37.857Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "whz7KlVBocY",
+      "reviewId": "nJRzBcZkczY",
+      "versionNumber": 1,
+      "liveUrl": "https://reqsta.com/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-04T19:14:44.613Z",
+      "mockVariant": 1
+    },
+    {
+      "id": "stuttKjdCWQ",
+      "reviewId": "1tihyn2na",
+      "versionNumber": 1,
+      "liveUrl": "https://skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T08:56:04.783Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "laWMiziUXuI",
+      "reviewId": "3C0hOmG5_TA",
+      "versionNumber": 1,
+      "liveUrl": "https://skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T08:56:15.491Z",
+      "mockVariant": 1
+    },
+    {
+      "id": "oTTUg99EVlQ",
+      "reviewId": "3C0hOmG5_TA",
+      "versionNumber": 2,
+      "liveUrl": "https://shop.skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T09:18:28.698Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "24tdB7C0N0c",
+      "reviewId": "3stkntdau",
+      "versionNumber": 1,
+      "liveUrl": "https://shop.skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T09:23:31.473Z",
+      "notes": "Initial submission",
+      "mockVariant": 1
+    },
+    {
+      "id": "C3TH1SyC6gI",
+      "reviewId": "PSzs0ta7wr0",
+      "versionNumber": 1,
+      "liveUrl": "https://shop.skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T09:23:40.322Z",
+      "mockVariant": 1
+    },
+    {
+      "id": "iIasKvV_u34",
+      "reviewId": "PSzs0ta7wr0",
+      "versionNumber": 2,
+      "liveUrl": "https://shop.skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T09:27:07.331Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "GF6T4tNt3C8",
+      "reviewId": "PSzs0ta7wr0",
+      "versionNumber": 3,
+      "liveUrl": "https://shop.skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T09:37:36.609Z",
+      "mockVariant": 2
+    },
+    {
+      "id": "5rMN6nz7NKg",
+      "reviewId": "ZPgih25HMzg",
+      "versionNumber": 1,
+      "liveUrl": "https://shop.skysecure.ai/",
+      "submittedBy": "user-dev",
+      "submittedAt": "2026-06-06T11:37:43.708Z",
+      "mockVariant": 1
     }
   ],
+  "reviewItems": [
+    {
+      "id": "item-nh-1",
+      "reviewId": "rev-nh-v4",
+      "itemNumber": 1,
+      "createdInVersion": 1,
+      "latestVersion": 2,
+      "title": "Logo alignment on identification page",
+      "description": "Logo is off-center on mobile viewport.",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T10:30:00.000Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/identification",
+        "x": 22,
+        "y": 18,
+        "xPercent": 22,
+        "yPercent": 18,
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "deviceMode": "Desktop",
+        "timestamp": "2026-06-04T10:30:00.000Z",
+        "annotationKind": "pin"
+      },
+      "screenshotUrl": "https://placehold.co/800x500/e2e8f0/475569?text=Issue+1",
+      "thumbnailUrl": "https://placehold.co/400x250/e2e8f0/475569?text=Issue+1"
+    },
+    {
+      "id": "item-nh-2",
+      "reviewId": "rev-nh-v4",
+      "itemNumber": 2,
+      "createdInVersion": 1,
+      "latestVersion": 2,
+      "title": "CTA button contrast",
+      "description": "Primary button fails contrast on hero section.",
+      "issueType": "VISUAL",
+      "priority": "HIGH",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T11:00:00.000Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/identification",
+        "x": 55,
+        "y": 62,
+        "xPercent": 55,
+        "yPercent": 62,
+        "widthPercent": 18,
+        "heightPercent": 12,
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "deviceMode": "Desktop",
+        "timestamp": "2026-06-04T11:00:00.000Z",
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://placehold.co/800x500/e2e8f0/475569?text=Issue+2",
+      "thumbnailUrl": "https://placehold.co/400x250/e2e8f0/475569?text=Issue+2"
+    },
+    {
+      "id": "BmNQr-VC8F0",
+      "reviewId": "rev-nh-v4",
+      "itemNumber": 3,
+      "createdInVersion": 2,
+      "latestVersion": 2,
+      "title": "Fix isue no 3",
+      "description": "Fix isue no 3",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "REQUESTED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T17:33:01.621Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 27.82546424018818,
+        "y": 29.220777933986476,
+        "viewport": {
+          "width": 1118,
+          "height": 554
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T17:33:01.621Z",
+        "xPercent": 27.82546424018818,
+        "yPercent": 29.220777933986476,
+        "widthPercent": 18.95565051610834,
+        "heightPercent": 22.005771036705866,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780594379799-284590781-review-rev-nh-v4-issue-3.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780594379799-284590781-review-rev-nh-v4-issue-3.png"
+    },
+    {
+      "id": "9PwMrz2sj8w",
+      "reviewId": "2xh1Y_HDL7s",
+      "itemNumber": 1,
+      "createdInVersion": 1,
+      "latestVersion": 1,
+      "title": "Resize loader please",
+      "description": "Resize loader please",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T17:49:50.419Z",
+      "annotation": {
+        "pageUrl": "http://localhost:3001/api/website-proxy?url=https%3A%2F%2Fuat.digital.airline.amadeus.com%2Ftx%2Fssci%2Fidentification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 22.013590261192697,
+        "y": 12.085136552945023,
+        "viewport": {
+          "width": 1118,
+          "height": 554
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T17:49:50.419Z",
+        "xPercent": 22.013590261192697,
+        "yPercent": 12.085136552945023,
+        "widthPercent": 51.055077569329534,
+        "heightPercent": 74.6753213868543,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595388173-295228622-review-2xh1Y_HDL7s-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595388173-295228622-review-2xh1Y_HDL7s-issue-1.png"
+    },
+    {
+      "id": "03yegW-fXag",
+      "reviewId": "2xh1Y_HDL7s",
+      "itemNumber": 2,
+      "createdInVersion": 1,
+      "latestVersion": 1,
+      "title": "Add Logo",
+      "description": "Add Logo",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T17:50:28.945Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 12.178111219815731,
+        "y": 11.363635863216961,
+        "viewport": {
+          "width": 1118,
+          "height": 554
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T17:50:28.945Z",
+        "xPercent": 12.178111219815731,
+        "yPercent": 11.363635863216961,
+        "annotationKind": "pin"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595427406-653765578-review-2xh1Y_HDL7s-issue-2.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595427406-653765578-review-2xh1Y_HDL7s-issue-2.png"
+    },
+    {
+      "id": "ctcItlS01_M",
+      "reviewId": "2xh1Y_HDL7s",
+      "itemNumber": 3,
+      "createdInVersion": 1,
+      "latestVersion": 1,
+      "title": "Very confusing",
+      "description": "Very confusing",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T17:51:04.868Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 19.331186886271706,
+        "y": 2.705627586480229,
+        "viewport": {
+          "width": 1118,
+          "height": 554
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T17:51:04.868Z",
+        "xPercent": 19.331186886271706,
+        "yPercent": 2.705627586480229,
+        "widthPercent": 34.692416982311485,
+        "heightPercent": 12.806637242673084,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595463336-293778855-review-2xh1Y_HDL7s-issue-3.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595463336-293778855-review-2xh1Y_HDL7s-issue-3.png"
+    },
+    {
+      "id": "1qjjlDnyU-k",
+      "reviewId": "2xh1Y_HDL7s",
+      "itemNumber": 4,
+      "createdInVersion": 3,
+      "latestVersion": 3,
+      "title": "Remove Image",
+      "description": "Remove Image",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T18:03:04.259Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 54.18061283778761,
+        "y": 191.66347625004954,
+        "viewport": {
+          "width": 1118,
+          "height": 525
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T18:03:04.259Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 4.8462086616983555,
+        "yPercent": 36.50732880953325,
+        "annotationKind": "pin"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780596181978-848652886-review-2xh1Y_HDL7s-issue-4.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780596181978-848652886-review-2xh1Y_HDL7s-issue-4.png"
+    },
+    {
+      "id": "zxjO4pqHsCw",
+      "reviewId": "2xh1Y_HDL7s",
+      "itemNumber": 5,
+      "createdInVersion": 5,
+      "latestVersion": 5,
+      "title": "Logo is still loading needs to be fixed",
+      "description": "Logo is still loading needs to be fixed",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "REQUESTED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T18:33:29.157Z",
+      "annotation": {
+        "pageUrl": "http://localhost:3001/tx/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 143.14877970825043,
+        "y": 113.67833600228937,
+        "viewport": {
+          "width": 1118,
+          "height": 525
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T18:33:29.157Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 12.804005340630628,
+        "yPercent": 21.65301638138845,
+        "endXPercent": 36.76680882325815,
+        "endYPercent": 31.175011527635117,
+        "annotationKind": "arrow"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598006552-723469513-review-2xh1Y_HDL7s-issue-5.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598006552-723469513-review-2xh1Y_HDL7s-issue-5.png"
+    },
+    {
+      "id": "uYYUV0VBqSY",
+      "reviewId": "qkvSMGDaD-I",
+      "itemNumber": 1,
+      "createdInVersion": 1,
+      "latestVersion": 3,
+      "title": "Logo we need to update with new logo",
+      "description": "Logo we need to update with new logo",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T18:49:29.616Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 8.197065915975372,
+        "y": 5.698911043852205,
+        "viewport": {
+          "width": 1118,
+          "height": 525
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T18:49:29.616Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 0.7331901534861692,
+        "yPercent": 1.0855068654956581,
+        "widthPercent": 28.522889219993203,
+        "heightPercent": 10.664634563796263,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598967610-406790730-review-qkvSMGDaD-I-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598967610-406790730-review-qkvSMGDaD-I-issue-1.png"
+    },
+    {
+      "id": "162Sy27q7LI",
+      "reviewId": "qkvSMGDaD-I",
+      "itemNumber": 2,
+      "createdInVersion": 2,
+      "latestVersion": 2,
+      "title": "Text color is not visible",
+      "description": "Text color is not visible",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "APPROVED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T18:55:20.831Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 402.0561417245411,
+        "y": 349.63337572628166,
+        "viewport": {
+          "width": 1118,
+          "height": 525
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T18:55:20.831Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 35.96208781078185,
+        "yPercent": 66.5968334716727,
+        "endXPercent": 48.21172988958772,
+        "endYPercent": 92.68710017238855,
+        "annotationKind": "arrow"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780599317379-619370306-review-qkvSMGDaD-I-issue-2.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780599317379-619370306-review-qkvSMGDaD-I-issue-2.png"
+    },
+    {
+      "id": "UKbni5FINUI",
+      "reviewId": "2AvF3li1RRU",
+      "itemNumber": 1,
+      "createdInVersion": 1,
+      "latestVersion": 1,
+      "title": "Airline Logo is not fully visible",
+      "description": "Airline Logo is not fully visible",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "REQUESTED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T19:12:49.084Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/mk/ssci",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 74.17345932553206,
+        "y": 73.42959989536128,
+        "viewport": {
+          "width": 1118,
+          "height": 496
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T19:12:49.084Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 6.6344775783123495,
+        "yPercent": 14.804354817613161,
+        "widthPercent": 34.24534975315799,
+        "heightPercent": 51.028638696324556,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600366297-190810972-review-2AvF3li1RRU-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600366297-190810972-review-2AvF3li1RRU-issue-1.png"
+    },
+    {
+      "id": "6xoBnEkn9M4",
+      "reviewId": "nJRzBcZkczY",
+      "itemNumber": 1,
+      "createdInVersion": 1,
+      "latestVersion": 1,
+      "title": "Alignment is not correct with other cards",
+      "description": "Alignment is not correct with other cards",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "REQUESTED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T19:15:41.480Z",
+      "annotation": {
+        "pageUrl": "https://reqsta.com/",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 108.16129835469764,
+        "y": 352.54213496856994,
+        "viewport": {
+          "width": 1118,
+          "height": 496
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T19:15:41.480Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 9.67453473655614,
+        "yPercent": 71.07704334043748,
+        "endXPercent": 35.515020581628356,
+        "endYPercent": 68.65671265128374,
+        "annotationKind": "arrow"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600539944-857048477-review-nJRzBcZkczY-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600539944-857048477-review-nJRzBcZkczY-issue-1.png"
+    },
+    {
+      "id": "pXejnHiJAuE",
+      "reviewId": "nJRzBcZkczY",
+      "itemNumber": 2,
+      "createdInVersion": 1,
+      "latestVersion": 1,
+      "title": "Change Collaboration Logo",
+      "description": "Change Collaboration Logo",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "REQUESTED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-04T19:16:33.699Z",
+      "annotation": {
+        "pageUrl": "https://reqsta.com/",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 687.9538464992868,
+        "y": 112.44533060451947,
+        "viewport": {
+          "width": 1118,
+          "height": 496
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-04T19:16:33.699Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 61.534333318361966,
+        "yPercent": 22.670429557362795,
+        "widthPercent": 30.13233124494581,
+        "heightPercent": 44.17103507705564,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600592156-265686951-review-nJRzBcZkczY-issue-2.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600592156-265686951-review-nJRzBcZkczY-issue-2.png"
+    },
+    {
+      "id": "5aSFgF5lH5k",
+      "reviewId": "qkvSMGDaD-I",
+      "itemNumber": 3,
+      "createdInVersion": 3,
+      "latestVersion": 3,
+      "title": "Remove icon section",
+      "description": "Remove icon section",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "REQUESTED",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-06T08:52:17.591Z",
+      "annotation": {
+        "pageUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 104.15164850828356,
+        "y": 60.424356325641874,
+        "viewport": {
+          "width": 862,
+          "height": 496
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-06T08:52:17.591Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 12.082557831587419,
+        "yPercent": 12.182329904363282,
+        "widthPercent": 69.1094600101546,
+        "heightPercent": 11.294876549384094,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780735935406-941200950-review-qkvSMGDaD-I-issue-3-clean.png",
+      "annotatedScreenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780735935406-603839309-review-qkvSMGDaD-I-issue-3-annotated.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780735935406-729895836-review-qkvSMGDaD-I-issue-3-thumb.png"
+    },
+    {
+      "id": "3Mo8-J4kk3c",
+      "reviewId": "3C0hOmG5_TA",
+      "itemNumber": 1,
+      "createdInVersion": 1,
+      "latestVersion": 2,
+      "title": "Modify conent as 1 line",
+      "description": "Modify conent as 1 line",
+      "issueType": "CONTENT",
+      "priority": "MEDIUM",
+      "status": "READY_FOR_REVIEW",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-06T08:56:53.201Z",
+      "annotation": {
+        "pageUrl": "https://skysecure.ai/",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 41.902777777777786,
+        "y": 148.7800550752101,
+        "viewport": {
+          "width": 862,
+          "height": 496
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-06T08:56:53.200Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 4.861111111111112,
+        "yPercent": 29.995978845808484,
+        "widthPercent": 89.00462962962963,
+        "heightPercent": 25.733816158155914,
+        "annotationKind": "rectangle"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736211131-249637236-review-3C0hOmG5_TA-issue-1-clean.png",
+      "annotatedScreenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736211131-571929641-review-3C0hOmG5_TA-issue-1-annotated.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736211131-277720297-review-3C0hOmG5_TA-issue-1-thumb.png"
+    },
+    {
+      "id": "lzpg-tptO3s",
+      "reviewId": "3C0hOmG5_TA",
+      "itemNumber": 2,
+      "createdInVersion": 1,
+      "latestVersion": 2,
+      "title": "Change icon please",
+      "description": "Change icon please",
+      "issueType": "VISUAL",
+      "priority": "MEDIUM",
+      "status": "READY_FOR_REVIEW",
+      "createdBy": "user-reviewer",
+      "createdAt": "2026-06-06T08:58:26.707Z",
+      "annotation": {
+        "pageUrl": "https://skysecure.ai/",
+        "pageTitle": "signoff.ai | Live App Review & Signoff",
+        "x": 345.1990740740741,
+        "y": 321.29312514544773,
+        "viewport": {
+          "width": 862,
+          "height": 496
+        },
+        "deviceMode": "Desktop",
+        "browser": "Chrome",
+        "browserVersion": "148",
+        "os": "Windows 11",
+        "timestamp": "2026-06-06T08:58:26.707Z",
+        "scrollPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "xPercent": 40.0462962962963,
+        "yPercent": 64.77683974706608,
+        "endXPercent": 84.375,
+        "endYPercent": 74.22597536763897,
+        "annotationKind": "arrow"
+      },
+      "screenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736304663-250182059-review-3C0hOmG5_TA-issue-2-clean.png",
+      "annotatedScreenshotUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736304663-855778175-review-3C0hOmG5_TA-issue-2-annotated.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736304663-319208478-review-3C0hOmG5_TA-issue-2-thumb.png"
+    }
+  ],
+  "reviewComments": [],
+  "reviewAttachments": [
+    {
+      "id": "att-nh-1",
+      "reviewItemId": "item-nh-1",
+      "type": "screenshot",
+      "url": "https://placehold.co/800x500/e2e8f0/475569?text=Issue+1",
+      "thumbnailUrl": "https://placehold.co/400x250/e2e8f0/475569?text=Issue+1",
+      "createdAt": "2026-06-04T10:30:00.000Z"
+    },
+    {
+      "id": "att-nh-2",
+      "reviewItemId": "item-nh-2",
+      "type": "screenshot",
+      "url": "https://placehold.co/800x500/e2e8f0/475569?text=Issue+2",
+      "thumbnailUrl": "https://placehold.co/400x250/e2e8f0/475569?text=Issue+2",
+      "createdAt": "2026-06-04T11:00:00.000Z"
+    },
+    {
+      "id": "aRZKy2cMo8Q",
+      "reviewItemId": "BmNQr-VC8F0",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780594379799-284590781-review-rev-nh-v4-issue-3.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780594379799-284590781-review-rev-nh-v4-issue-3.png",
+      "createdAt": "2026-06-04T17:33:01.630Z"
+    },
+    {
+      "id": "ZkpbE6ucDhw",
+      "reviewItemId": "9PwMrz2sj8w",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595388173-295228622-review-2xh1Y_HDL7s-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595388173-295228622-review-2xh1Y_HDL7s-issue-1.png",
+      "createdAt": "2026-06-04T17:49:50.430Z"
+    },
+    {
+      "id": "ku-sd7sU7RA",
+      "reviewItemId": "03yegW-fXag",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595427406-653765578-review-2xh1Y_HDL7s-issue-2.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595427406-653765578-review-2xh1Y_HDL7s-issue-2.png",
+      "createdAt": "2026-06-04T17:50:28.953Z"
+    },
+    {
+      "id": "2vSx1NBXXG8",
+      "reviewItemId": "ctcItlS01_M",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595463336-293778855-review-2xh1Y_HDL7s-issue-3.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780595463336-293778855-review-2xh1Y_HDL7s-issue-3.png",
+      "createdAt": "2026-06-04T17:51:04.875Z"
+    },
+    {
+      "id": "w5tOLASfTPg",
+      "reviewItemId": "1qjjlDnyU-k",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780596181978-848652886-review-2xh1Y_HDL7s-issue-4.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780596181978-848652886-review-2xh1Y_HDL7s-issue-4.png",
+      "createdAt": "2026-06-04T18:03:04.266Z"
+    },
+    {
+      "id": "DtfR_-ZF6BM",
+      "reviewItemId": "zxjO4pqHsCw",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598006552-723469513-review-2xh1Y_HDL7s-issue-5.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598006552-723469513-review-2xh1Y_HDL7s-issue-5.png",
+      "createdAt": "2026-06-04T18:33:29.164Z"
+    },
+    {
+      "id": "8iNjoEtiol8",
+      "reviewItemId": "uYYUV0VBqSY",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598967610-406790730-review-qkvSMGDaD-I-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780598967610-406790730-review-qkvSMGDaD-I-issue-1.png",
+      "createdAt": "2026-06-04T18:49:29.624Z"
+    },
+    {
+      "id": "fayBIrxOLGo",
+      "reviewItemId": "162Sy27q7LI",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780599317379-619370306-review-qkvSMGDaD-I-issue-2.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780599317379-619370306-review-qkvSMGDaD-I-issue-2.png",
+      "createdAt": "2026-06-04T18:55:20.839Z"
+    },
+    {
+      "id": "FIm_2t18iTU",
+      "reviewItemId": "UKbni5FINUI",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600366297-190810972-review-2AvF3li1RRU-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600366297-190810972-review-2AvF3li1RRU-issue-1.png",
+      "createdAt": "2026-06-04T19:12:49.094Z"
+    },
+    {
+      "id": "QHHX-qMJMZg",
+      "reviewItemId": "6xoBnEkn9M4",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600539944-857048477-review-nJRzBcZkczY-issue-1.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600539944-857048477-review-nJRzBcZkczY-issue-1.png",
+      "createdAt": "2026-06-04T19:15:41.487Z"
+    },
+    {
+      "id": "x8rKgakH6fQ",
+      "reviewItemId": "pXejnHiJAuE",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600592156-265686951-review-nJRzBcZkczY-issue-2.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780600592156-265686951-review-nJRzBcZkczY-issue-2.png",
+      "createdAt": "2026-06-04T19:16:33.706Z"
+    },
+    {
+      "id": "kOiN71gzqrA",
+      "reviewItemId": "5aSFgF5lH5k",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780735935406-941200950-review-qkvSMGDaD-I-issue-3-clean.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780735935406-729895836-review-qkvSMGDaD-I-issue-3-thumb.png",
+      "createdAt": "2026-06-06T08:52:17.621Z"
+    },
+    {
+      "id": "JHcokemtPOk",
+      "reviewItemId": "3Mo8-J4kk3c",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736211131-249637236-review-3C0hOmG5_TA-issue-1-clean.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736211131-277720297-review-3C0hOmG5_TA-issue-1-thumb.png",
+      "createdAt": "2026-06-06T08:56:53.209Z"
+    },
+    {
+      "id": "yWWPM_KDStw",
+      "reviewItemId": "lzpg-tptO3s",
+      "type": "screenshot",
+      "url": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736304663-250182059-review-3C0hOmG5_TA-issue-2-clean.png",
+      "thumbnailUrl": "https://storage.googleapis.com/reqsta-ai.firebasestorage.app/uploads/1780736304663-319208478-review-3C0hOmG5_TA-issue-2-thumb.png",
+      "createdAt": "2026-06-06T08:58:26.714Z"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "ZOncpJ9TYjw",
+      "reviewId": "qkvSMGDaD-I",
+      "approvedVersion": 3,
+      "approvedBy": "user-reviewer",
+      "approvedAt": "2026-06-04T19:09:26.934Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "log-1",
+      "projectId": "proj-nh",
+      "reviewId": "rev-nh-v4",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Dev Team",
+      "timestamp": "2026-06-04T14:00:00.000Z",
+      "metadata": {
+        "versionNumber": 2
+      }
+    },
+    {
+      "id": "log-2",
+      "projectId": "proj-nh",
+      "reviewId": "rev-nh-v4",
+      "action": "Review Item Status Changed",
+      "user": "user-dev",
+      "userLabel": "Dev Team",
+      "timestamp": "2026-06-04T14:00:00.000Z",
+      "metadata": {
+        "reviewItemId": "item-nh-2",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 2
+      }
+    },
+    {
+      "projectId": "proj-nh",
+      "reviewId": "rev-nh-v4",
+      "action": "Review Item Approved",
+      "user": "user-reviewer",
+      "userLabel": "NH Reviewer",
+      "metadata": {
+        "reviewItemId": "item-nh-2",
+        "from": "READY_FOR_REVIEW",
+        "to": "APPROVED"
+      },
+      "id": "f1VNCPQecHs",
+      "timestamp": "2026-06-04T17:32:42.399Z"
+    },
+    {
+      "projectId": "proj-nh",
+      "reviewId": "rev-nh-v4",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "NH Reviewer",
+      "metadata": {
+        "reviewItemId": "BmNQr-VC8F0",
+        "itemNumber": 3,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 2
+      },
+      "id": "yQJW2WWjnyI",
+      "timestamp": "2026-06-04T17:33:01.739Z"
+    },
+    {
+      "projectId": "proj-nh",
+      "reviewId": "wsduom0fm",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "NH SSCI V5"
+      },
+      "id": "KDpNADCrTWg",
+      "timestamp": "2026-06-04T17:34:25.309Z"
+    },
+    {
+      "projectId": "proj-nh",
+      "reviewId": "wsduom0fm",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/"
+      },
+      "id": "GXupay4wXWo",
+      "timestamp": "2026-06-04T17:34:25.317Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "zn90hg7zy",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "TX UAT SSCI"
+      },
+      "id": "sciubX5R4tY",
+      "timestamp": "2026-06-04T17:36:02.492Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "zn90hg7zy",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "http://uat.digital.airline.amadeus.com/tx/ssci"
+      },
+      "id": "gEODuVR2mAA",
+      "timestamp": "2026-06-04T17:36:02.614Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification"
+      },
+      "id": "ow9q5mBK0ug",
+      "timestamp": "2026-06-04T17:47:58.249Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "9PwMrz2sj8w",
+        "itemNumber": 1,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "7ZOg4RCzQlw",
+      "timestamp": "2026-06-04T17:49:50.437Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "03yegW-fXag",
+        "itemNumber": 2,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "xfsGXxXS2TA",
+      "timestamp": "2026-06-04T17:50:28.959Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "ctcItlS01_M",
+        "itemNumber": 3,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "-uxqFSnOxMg",
+      "timestamp": "2026-06-04T17:51:04.883Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "9PwMrz2sj8w",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 2
+      },
+      "id": "U96om8yJh3U",
+      "timestamp": "2026-06-04T17:57:23.610Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "03yegW-fXag",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 2
+      },
+      "id": "fjIflixp4ZM",
+      "timestamp": "2026-06-04T17:57:23.624Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "ctcItlS01_M",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 2
+      },
+      "id": "Hz1CZXtrMKU",
+      "timestamp": "2026-06-04T17:57:23.636Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 2,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification"
+      },
+      "id": "tvlJyppRUl0",
+      "timestamp": "2026-06-04T17:57:23.648Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Approved",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "9PwMrz2sj8w",
+        "from": "READY_FOR_REVIEW",
+        "to": "APPROVED"
+      },
+      "id": "s7lHbgBp7G4",
+      "timestamp": "2026-06-04T17:57:32.322Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Approved",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "03yegW-fXag",
+        "from": "READY_FOR_REVIEW",
+        "to": "APPROVED"
+      },
+      "id": "E6RVZvtG8Mo",
+      "timestamp": "2026-06-04T17:57:35.104Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Approved",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "ctcItlS01_M",
+        "from": "READY_FOR_REVIEW",
+        "to": "APPROVED"
+      },
+      "id": "NcyhgRRJDBI",
+      "timestamp": "2026-06-04T17:57:37.319Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 3,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification"
+      },
+      "id": "sWmr9JqLsSk",
+      "timestamp": "2026-06-04T17:58:17.004Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "1qjjlDnyU-k",
+        "itemNumber": 4,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 3
+      },
+      "id": "tk1Lk52ChGw",
+      "timestamp": "2026-06-04T18:03:04.272Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "1qjjlDnyU-k",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 4
+      },
+      "id": "5J-GSiPRIHw",
+      "timestamp": "2026-06-04T18:03:21.492Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 4,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification"
+      },
+      "id": "YmkbSYerbBU",
+      "timestamp": "2026-06-04T18:03:21.505Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Approved",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "1qjjlDnyU-k",
+        "from": "READY_FOR_REVIEW",
+        "to": "APPROVED"
+      },
+      "id": "XGlnoXgEPG8",
+      "timestamp": "2026-06-04T18:03:26.366Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 5,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/tx/ssci/identification"
+      },
+      "id": "Yp5FEAhR_es",
+      "timestamp": "2026-06-04T18:32:20.971Z"
+    },
+    {
+      "projectId": "u2o4ME1C7HA",
+      "reviewId": "2xh1Y_HDL7s",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircaribe",
+      "metadata": {
+        "reviewItemId": "zxjO4pqHsCw",
+        "itemNumber": 5,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 5
+      },
+      "id": "l-Klg8fgu8c",
+      "timestamp": "2026-06-04T18:33:29.171Z"
+    },
+    {
+      "projectId": "proj-nh",
+      "reviewId": "cq8huaiei",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "NH SSCI"
+      },
+      "id": "QJXBmJjc4Yw",
+      "timestamp": "2026-06-04T18:34:43.256Z"
+    },
+    {
+      "projectId": "proj-nh",
+      "reviewId": "cq8huaiei",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/nh/ssci/identification"
+      },
+      "id": "GhKmOo3oKJQ",
+      "timestamp": "2026-06-04T18:34:43.264Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "eab9mw98l",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "SB UAT V1"
+      },
+      "id": "rGZv1Kw92WQ",
+      "timestamp": "2026-06-04T18:35:41.771Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "eab9mw98l",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci"
+      },
+      "id": "vcgd5oQQusE",
+      "timestamp": "2026-06-04T18:35:41.779Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification"
+      },
+      "id": "8Eju1v7e6-Y",
+      "timestamp": "2026-06-04T18:36:59.296Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircalin",
+      "metadata": {
+        "reviewItemId": "uYYUV0VBqSY",
+        "itemNumber": 1,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "T-likMpCNW4",
+      "timestamp": "2026-06-04T18:49:29.630Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "uYYUV0VBqSY",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 2
+      },
+      "id": "GUExGr0Ud68",
+      "timestamp": "2026-06-04T18:49:46.282Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 2,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification"
+      },
+      "id": "u5rtu5EucDU",
+      "timestamp": "2026-06-04T18:49:46.297Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircalin",
+      "metadata": {
+        "reviewItemId": "162Sy27q7LI",
+        "itemNumber": 2,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 2
+      },
+      "id": "YaBNhSGX0Fo",
+      "timestamp": "2026-06-04T18:55:20.848Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "162Sy27q7LI",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 3
+      },
+      "id": "G0gXGqAnDNU",
+      "timestamp": "2026-06-04T19:08:24.739Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 3,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/sb/ssci/identification"
+      },
+      "id": "ZxDrvnEu1uI",
+      "timestamp": "2026-06-04T19:08:24.752Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Review Item Approved",
+      "user": "user-reviewer",
+      "userLabel": "Aircalin",
+      "metadata": {
+        "reviewItemId": "162Sy27q7LI",
+        "from": "READY_FOR_REVIEW",
+        "to": "APPROVED"
+      },
+      "id": "9yX29uqx5To",
+      "timestamp": "2026-06-04T19:08:43.745Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Review Item Approved",
+      "user": "user-reviewer",
+      "userLabel": "Aircalin",
+      "metadata": {
+        "reviewItemId": "uYYUV0VBqSY",
+        "from": "READY_FOR_REVIEW",
+        "to": "APPROVED"
+      },
+      "id": "DqSvhgcOKuc",
+      "timestamp": "2026-06-04T19:09:15.880Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Release Approved",
+      "user": "user-reviewer",
+      "userLabel": "Aircalin",
+      "metadata": {
+        "approvedVersion": 3
+      },
+      "id": "6l-HciGoxaI",
+      "timestamp": "2026-06-04T19:09:26.960Z"
+    },
+    {
+      "projectId": "pDToMokKkYg",
+      "reviewId": "rghdwge58",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "MK UAT SSCI"
+      },
+      "id": "F6kz2KDVhRA",
+      "timestamp": "2026-06-04T19:11:38.379Z"
+    },
+    {
+      "projectId": "pDToMokKkYg",
+      "reviewId": "rghdwge58",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/mk/ssci/identification"
+      },
+      "id": "MF4lixqEL7I",
+      "timestamp": "2026-06-04T19:11:38.386Z"
+    },
+    {
+      "projectId": "pDToMokKkYg",
+      "reviewId": "2AvF3li1RRU",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://uat.digital.airline.amadeus.com/mk/ssci"
+      },
+      "id": "0AX4D_6ZVDs",
+      "timestamp": "2026-06-04T19:12:05.248Z"
+    },
+    {
+      "projectId": "pDToMokKkYg",
+      "reviewId": "2AvF3li1RRU",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Air Marutius",
+      "metadata": {
+        "reviewItemId": "UKbni5FINUI",
+        "itemNumber": 1,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "hLKo5Y4Qpbw",
+      "timestamp": "2026-06-04T19:12:49.107Z"
+    },
+    {
+      "projectId": "KsxpCSZVizY",
+      "reviewId": "75sh8slh1",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "TEST"
+      },
+      "id": "vFIWWnUJcy4",
+      "timestamp": "2026-06-04T19:14:37.881Z"
+    },
+    {
+      "projectId": "KsxpCSZVizY",
+      "reviewId": "75sh8slh1",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://reqsta.com/"
+      },
+      "id": "xcKUfWX1xL4",
+      "timestamp": "2026-06-04T19:14:37.887Z"
+    },
+    {
+      "projectId": "KsxpCSZVizY",
+      "reviewId": "nJRzBcZkczY",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://reqsta.com/"
+      },
+      "id": "yQ65AEy_aX0",
+      "timestamp": "2026-06-04T19:14:44.629Z"
+    },
+    {
+      "projectId": "KsxpCSZVizY",
+      "reviewId": "nJRzBcZkczY",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "test",
+      "metadata": {
+        "reviewItemId": "6xoBnEkn9M4",
+        "itemNumber": 1,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "U93pMFEgnPw",
+      "timestamp": "2026-06-04T19:15:41.495Z"
+    },
+    {
+      "projectId": "KsxpCSZVizY",
+      "reviewId": "nJRzBcZkczY",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "test",
+      "metadata": {
+        "reviewItemId": "pXejnHiJAuE",
+        "itemNumber": 2,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "OgPHwhmtFeI",
+      "timestamp": "2026-06-04T19:16:33.713Z"
+    },
+    {
+      "projectId": "e1YvrZwJMpo",
+      "reviewId": "qkvSMGDaD-I",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "Aircalin",
+      "metadata": {
+        "reviewItemId": "5aSFgF5lH5k",
+        "itemNumber": 3,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 3
+      },
+      "id": "C6zTOtMnYGE",
+      "timestamp": "2026-06-06T08:52:17.629Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "1tihyn2na",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "V1"
+      },
+      "id": "zTBJnpqNQPc",
+      "timestamp": "2026-06-06T08:56:04.800Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "1tihyn2na",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://skysecure.ai/"
+      },
+      "id": "9kp5xpZ6yMw",
+      "timestamp": "2026-06-06T08:56:04.808Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3C0hOmG5_TA",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://skysecure.ai/"
+      },
+      "id": "2E1ghBwExyo",
+      "timestamp": "2026-06-06T08:56:15.508Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3C0hOmG5_TA",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "test",
+      "metadata": {
+        "reviewItemId": "3Mo8-J4kk3c",
+        "itemNumber": 1,
+        "issueType": "CONTENT",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "GzjEyn-tqqM",
+      "timestamp": "2026-06-06T08:56:53.215Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3C0hOmG5_TA",
+      "action": "Review Item Created",
+      "user": "user-reviewer",
+      "userLabel": "test",
+      "metadata": {
+        "reviewItemId": "lzpg-tptO3s",
+        "itemNumber": 2,
+        "issueType": "VISUAL",
+        "priority": "MEDIUM",
+        "versionNumber": 1
+      },
+      "id": "2QYEB2koJCY",
+      "timestamp": "2026-06-06T08:58:26.723Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3C0hOmG5_TA",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "3Mo8-J4kk3c",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 2
+      },
+      "id": "ODiqvExztIo",
+      "timestamp": "2026-06-06T09:18:28.722Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3C0hOmG5_TA",
+      "action": "Review Item Ready For Review",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "reviewItemId": "lzpg-tptO3s",
+        "from": "REQUESTED",
+        "to": "READY_FOR_REVIEW",
+        "versionNumber": 2
+      },
+      "id": "1PDv0C8dZPo",
+      "timestamp": "2026-06-06T09:18:28.742Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3C0hOmG5_TA",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 2,
+        "liveUrl": "https://shop.skysecure.ai/"
+      },
+      "id": "ldA-W14sa-U",
+      "timestamp": "2026-06-06T09:18:28.759Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3stkntdau",
+      "action": "Review Created",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "title": "V2"
+      },
+      "id": "b8O3Dn3gP5w",
+      "timestamp": "2026-06-06T09:23:31.505Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "3stkntdau",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "user-dev",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://shop.skysecure.ai/"
+      },
+      "id": "-8fq3IcGCQU",
+      "timestamp": "2026-06-06T09:23:31.515Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "PSzs0ta7wr0",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://shop.skysecure.ai/"
+      },
+      "id": "M8LMU1xLo8o",
+      "timestamp": "2026-06-06T09:23:40.343Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "PSzs0ta7wr0",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 2,
+        "liveUrl": "https://shop.skysecure.ai/"
+      },
+      "id": "z5HPQeG-UXg",
+      "timestamp": "2026-06-06T09:27:07.356Z"
+    },
+    {
+      "projectId": "BtLpYYvGi10",
+      "reviewId": "PSzs0ta7wr0",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 3,
+        "liveUrl": "https://shop.skysecure.ai/"
+      },
+      "id": "r_znDqE45Mc",
+      "timestamp": "2026-06-06T09:37:36.634Z"
+    },
+    {
+      "projectId": "proj-nh",
+      "reviewId": "ZPgih25HMzg",
+      "action": "Version Submitted",
+      "user": "user-dev",
+      "userLabel": "Developer",
+      "metadata": {
+        "versionNumber": 1,
+        "liveUrl": "https://shop.skysecure.ai/"
+      },
+      "id": "lyOdd29KokQ",
+      "timestamp": "2026-06-06T11:37:43.728Z"
+    }
+  ],
+  "waitlist": {
+    "id": "waitlist-stats",
+    "claimedCount": 7
+  },
+  "waitlistSignups": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

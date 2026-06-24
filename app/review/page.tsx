@@ -6,16 +6,17 @@ import { Mail, Search, ArrowRight, Loader2, FolderKanban } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { StatusBadge } from "@/components/ui/status-badge";
+import { ReviewSessionStatusBadge } from "@/components/mvp/review-status-badge";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { Project, Review } from "@/lib/api";
+import { Project, ReviewSession } from "@/lib/api";
+import { API_BASE_URL } from "@/lib/config";
 
 export default function ClientPortalPage() {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [hasSearched, setHasSearched] = useState(false);
   const [projects, setProjects] = useState<Project[]>([]);
-  const [reviews, setReviews] = useState<Review[]>([]);
+  const [reviews, setReviews] = useState<ReviewSession[]>([]);
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,13 +27,13 @@ export default function ClientPortalPage() {
       setHasSearched(true);
 
       // Fetch projects matching clientEmail
-      const projRes = await fetch(`http://localhost:3001/projects?clientEmail=${encodeURIComponent(email.trim())}`);
+      const projRes = await fetch(`${API_BASE_URL}/projects?clientEmail=${encodeURIComponent(email.trim())}`);
       const matchedProjects: Project[] = projRes.ok ? await projRes.json() : [];
 
       if (matchedProjects.length > 0) {
         // Fetch all reviews
-        const revRes = await fetch("http://localhost:3001/reviews");
-        const allReviews: Review[] = revRes.ok ? await revRes.json() : [];
+        const revRes = await fetch(`${API_BASE_URL}/reviews`);
+        const allReviews: ReviewSession[] = revRes.ok ? await revRes.json() : [];
 
         // Filter reviews that belong to matched projects
         const projectIds = matchedProjects.map((p) => p.id);
@@ -64,7 +65,7 @@ export default function ClientPortalPage() {
             signoff<span className="text-indigo-600">.ai</span> Client Portal
           </h1>
           <p className="text-sm text-muted-foreground max-w-md mx-auto">
-            Enter your email address to access all creative reviews, approvals, and shared assets.
+            Enter your email to access website UAT reviews and signoff sessions.
           </p>
         </div>
 
@@ -160,7 +161,7 @@ export default function ClientPortalPage() {
                                   </h4>
                                   <div className="flex items-center gap-2 text-[10px] text-muted-foreground">
                                     <span className="uppercase font-bold tracking-wider text-indigo-500">
-                                      {review.type}
+                                      {review.reviewType}
                                     </span>
                                     <span>•</span>
                                     <span>Uploaded {new Date(review.createdAt).toLocaleDateString()}</span>
@@ -168,7 +169,7 @@ export default function ClientPortalPage() {
                                 </div>
                                 
                                 <div className="flex items-center gap-4 flex-shrink-0">
-                                  <StatusBadge status={review.status} />
+                                  <ReviewSessionStatusBadge status={review.status} />
                                   <Link href={`/review/${review.id}`}>
                                     <Button
                                       variant="outline"

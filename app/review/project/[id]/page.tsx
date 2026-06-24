@@ -9,15 +9,15 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { StatusBadge } from "@/components/ui/status-badge";
+import { ReviewSessionStatusBadge } from "@/components/mvp/review-status-badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { getProject, getReviews, Project, Review } from "@/lib/api";
+import { getProject, getReviews, Project, ReviewSession } from "@/lib/api";
 
 export default function ClientProjectDashboard() {
   const { id: projectId } = useParams() as { id: string };
 
   const [project, setProject] = useState<Project | null>(null);
-  const [reviews, setReviews] = useState<Review[]>([]);
+  const [reviews, setReviews] = useState<ReviewSession[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   // Authorization Form States
@@ -244,9 +244,9 @@ export default function ClientProjectDashboard() {
                     <CardHeader className="pb-3 bg-zinc-50/50 border-b border-border">
                       <div className="flex justify-between items-center">
                         <span className="text-[10px] uppercase font-bold tracking-wider text-indigo-500">
-                          {review.type}
+                          {review.reviewType}
                         </span>
-                        <StatusBadge status={review.status} />
+                        <ReviewSessionStatusBadge status={review.status} />
                       </div>
                       <CardTitle className="text-base font-bold text-zinc-900 group-hover:text-indigo-600 transition-colors mt-2">
                         {review.title}

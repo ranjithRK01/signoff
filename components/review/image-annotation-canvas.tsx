@@ -3,32 +3,37 @@
 import { useRef, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Square, ArrowRight } from "lucide-react";
-import type { AnnotationKind, Comment } from "@/lib/api";
+import type { AnnotationKind, LegacyComment } from "@/lib/api";
 import { htmlToPlainText } from "@/lib/commentText";
 
 export type AnnotationTool = AnnotationKind;
 
+import type { DocumentAnchor } from "@/lib/annotationGeometry";
+
 export type PendingAnnotation = {
   kind: AnnotationKind;
+  /** Viewport % while editing (derived from anchor when present) */
   x: number;
   y: number;
   width?: number;
   height?: number;
   endX?: number;
   endY?: number;
+  /** Scroll-stable document anchor (Marker.io / Filestage style) */
+  anchor?: DocumentAnchor;
 };
 
 type ImageAnnotationCanvasProps = {
   imageSrc: string;
   imageAlt: string;
-  comments: Comment[];
+  comments: LegacyComment[];
   tool: AnnotationTool;
   onToolChange: (tool: AnnotationTool) => void;
   pending: PendingAnnotation | null;
   onPendingChange: (pending: PendingAnnotation | null) => void;
   hoveredPinId: string | null;
   onHoveredPinIdChange: (id: string | null) => void;
-  onPinClick?: (comment: Comment) => void;
+  onPinClick?: (comment: LegacyComment) => void;
   immersive?: boolean;
 };
 
@@ -71,7 +76,7 @@ export function ImageAnnotationCanvas({
   );
 
   const getPinNumber = useCallback(
-    (comment: Comment) => {
+    (comment: LegacyComment) => {
       return (
         comment.pinNumber ||
         imageAnnotations.findIndex((c) => c.id === comment.id) + 1

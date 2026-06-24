@@ -12,6 +12,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        navy: "#0F172A",
+        accent: {
+          DEFAULT: "#6366F1",
+          foreground: "#FFFFFF",
+        },
+        success: "#10B981",
+        secondary: "#64748B",
         card: {
           DEFAULT: "var(--card)",
           foreground: "var(--card-foreground)",
