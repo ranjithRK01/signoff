@@ -3,6 +3,10 @@ import { captureBrowserMetadata } from "@/lib/browserMeta";
 import { API_BASE_URL } from "@/lib/config";
 import { normalizeReviewUrl } from "@/lib/websiteViewer";
 import { uploadScreenshot } from "@/lib/uploadClient";
+
+function id(): string {
+  return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+}
 import type {
   AnnotationCapture,
   Approval,
